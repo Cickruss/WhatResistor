@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter/services.dart';
 import 'package:flutter/src/widgets/container.dart';
 import 'package:flutter/src/widgets/framework.dart';
 import 'package:google_fonts/google_fonts.dart';
@@ -70,6 +71,10 @@ class _ResistenceToColorState extends State<ResistenceToColor> {
           children: [
             Padding(padding: EdgeInsets.all(30.0)),
             TextField(
+              keyboardType: TextInputType.number,
+              inputFormatters: <TextInputFormatter>[
+                FilteringTextInputFormatter.digitsOnly
+              ],
               style: GoogleFonts.firaCode(fontSize: 15, color: Colors.white),
               maxLength: 11,
               controller: _textController,
@@ -105,7 +110,7 @@ class _ResistenceToColorState extends State<ResistenceToColor> {
                           fontSize: 20, fontWeight: FontWeight.w500),
                     ),
                     onPressed: () => runResistenceToColor(),
-                    child: const Text('Convert Now'),
+                    child: const Text('Converter'),
                   ),
                 ],
               ),

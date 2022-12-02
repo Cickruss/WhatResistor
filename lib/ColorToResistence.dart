@@ -54,7 +54,7 @@ class _ColorToResistenceState extends State<ColorToResistence> {
                 Column(
                   children: [
                     Padding(padding: EdgeInsets.all(50.0)),
-                    Text('Line 1',
+                    Text('Faixa 1',
                         style: GoogleFonts.firaCode(
                           color: Color.fromARGB(255, 184, 170, 149),
                         )),
@@ -130,7 +130,7 @@ class _ColorToResistenceState extends State<ColorToResistence> {
                 Column(
                   children: [
                     Padding(padding: EdgeInsets.all(50.0)),
-                    Text('Line 2',
+                    Text('Faixa 2',
                         style: GoogleFonts.firaCode(
                           color: Color.fromARGB(255, 184, 170, 149),
                         )),
@@ -202,7 +202,7 @@ class _ColorToResistenceState extends State<ColorToResistence> {
                 Column(
                   children: [
                     Padding(padding: EdgeInsets.all(50.0)),
-                    Text('Line 3',
+                    Text('Faixa 3',
                         style: GoogleFonts.firaCode(
                           color: Color.fromARGB(255, 184, 170, 149),
                         )),
@@ -294,7 +294,7 @@ class _ColorToResistenceState extends State<ColorToResistence> {
                               fontSize: 20, fontWeight: FontWeight.w500),
                         ),
                         onPressed: () => runColorToResistence(),
-                        child: const Text('Convert Now'),
+                        child: const Text('Converter'),
                       ),
                     ],
                   ),

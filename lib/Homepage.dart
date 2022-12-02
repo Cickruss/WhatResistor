@@ -52,7 +52,7 @@ class HomePage extends StatelessWidget {
                         MaterialPageRoute(
                             builder: (context) => ResistenceToColor()));
                   },
-                  child: const Text('Resistence -> Color'),
+                  child: const Text('Resistência -> Cor'),
                 ),
               ],
             ),
@@ -88,7 +88,7 @@ class HomePage extends StatelessWidget {
                         MaterialPageRoute(
                             builder: (context) => ColorToResistence()));
                   },
-                  child: const Text('Color -> Resistence'),
+                  child: const Text('Cor -> Resistência'),
                 ),
               ],
             ),
